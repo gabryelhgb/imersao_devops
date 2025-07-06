@@ -23,7 +23,11 @@ Este projeto é uma API desenvolvida com FastAPI para gerenciar alunos, cursos e
      ```sh
      source venv/bin/activate
      ```
-   - No Windows:
+   - No Windows, abra um terminal no modo administrador e execute o comando:
+   ```sh
+   Set-ExecutionPolicy RemoteSigned
+   ```
+
      ```sh
      venv\Scripts\activate
      ```
@@ -46,6 +50,15 @@ Este projeto é uma API desenvolvida com FastAPI para gerenciar alunos, cursos e
    Aqui você pode testar todos os endpoints da API de forma interativa.
 
 ---
+
+## Autenticando no Google Cloud
+
+```sh
+gcloud auth login
+gcloud config set project PROJECT_ID
+gcloud run deploy --port=8000
+```
+
 
 ## Estrutura do Projeto
 
